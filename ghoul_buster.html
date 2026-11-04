@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ghoul Buster Design Discussion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Ghoul Buster Training Simulator</h1>
+						<p>Development post-mortem discussion focussing on solving design decisions.</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>The Idea</h2>
+								<p>The game started off with the idea: a comedic game where you spot monsters vs costumes in a police training style paper target simulation. It was originally going to be a 
+									more ‘official’ program. Where the ghoul busters were a legitimate organisation like police. This evolved into 
+									something different by developing a concrete goal for the player’s experience and then testing every game-play/setting/writing 
+									decision against that desired experience.</p>
+								<video controls width="1280" height="720" title="Ghoul Buster Trailer"><source src="images/Ghoul Buster Trailer Itch.mp4" type="video/mp4"/></video>
+								<h2>Design Philosophy</h2>
+								<p>The comedy of the original idea was designed to come from taking something silly, extremely seriously. By focusing on 
+									this style of comedy I evolved the context, moving away from a legitimate organisation into one guy taking this concept 
+									so seriously he sets up an entire training course in his retirement village garage. The environment was designed by 
+									testing each idea against this concept as well. For example, the backdrop hanging at the back of the garage obscuring 
+									shelving, boxes and bags tells the story of Mr Buster pushing all the things he was storing in the garage to the back to 
+									make room for the simulator and trying to cover it with a sheet he drew the logo onto. The box of materials outside the 
+									garage in the menu screen and the cardboard boards of the simulator highlight Mr Buster having made all this by hand. 
+									Everything, including Sound Design was based on enhancing the comedy of the retirement village garage, such as the menu 
+									ambience with dogs barking, birds and car noises triggering intermittently.</p>
+								<div style="padding:0% 0% 0% 8%;" class="spotlight">
+									<span class="image"><img src="images/ItchCover.png" alt="" /></span>
+									<span class="image"><img src="images/ItchCover.png" alt="" /></span>
+								</div>
+								<div style="float:inline-end; padding:2% 0% 0% 0%;" class="spotlight">
+									<span class="image"><img src="images/ItchCover.png" alt="" /></span>
+								</div>
+								<h2>Solving Design Problems</h2>
+								<p>Basic gameplay design was: board flips up → use visual cues to identify ghoul or civilian → shoot or don’t → success/failure
+									This worked but the problem was it lacked enough variety to keep the player engaged throughout the 'training'. In many first person 
+									shooters, the main mechanic can be summarised as 'kill the thing', or in Ghoul Buster's case 'identify the thing'. FPS games keep the
+									player engaged by offering variety in the *how*. Taking that principle I added new ghoul types that required different player actions
+									to identify them like the Vampire who the player must throw garlic at to elicit a reaction.
+								</p>
+								<p>Another aspect of gameplay that presented a problem was how to integrate Mr Buster's lectures. In the game the player is completing a 
+									training course, one that Mr Buster is taking very seriously, so there needed to be lectures where he teaches the player about ghoul 
+									identification. The problem was having lectures for everything both interrupted gameplay and left the player feeling like their hand
+									was being held the whole time. So I added popup hints for some ghoul introductions like the mummy, to keep more momentum wilst still 
+									preserving a major aspect of the game's story.
+								</p>
+								<h2>Solving System Problems</h2>
+								<p>This project required a number of interconnected systems with a game loop that had to handle a wide range of optional runtime behaviours 
+									whilst maintaining generic, single responsibility code. I was able to leverage my data parsing background and build a custom level editor 
+									resource that could be read my a level_manager class to run levels from board and flow data. 
+								</p>
+								<h2>Experience</h2>
+								<p>Completing a polished game from ideation to release has cemented learned skills and taught me knew ones. There were things, like 3D modelling, 
+									that I had to learn for the first time for this project. Having a really strong creative vision and then learning the skills required to make 
+									that vision a reality, like when I modelled the fabric backdrop, was extremely satisfying. I am excited for future projects where I can build 
+									on my skills.
+								</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://thisbutdragons.itch.io/ghoul-buster-training-simulator" class="button">Check Out The Game</a></li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="index.html" class="button">Return Home</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
