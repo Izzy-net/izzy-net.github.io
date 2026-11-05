@@ -3040,6 +3040,21 @@ input, select, textarea {
 				width: 16em;
 			}
 
+		.spotlight .altimage {
+			display: inline-block;
+			margin-left: 0.5em;
+			margin-right: 1em;
+			padding: 0.65em;
+			border-radius: 100%;
+			border: solid 1px;
+		}
+
+			.spotlight .altimage img {
+				display: block;
+				border-radius: 100%;
+				width: 16em;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.spotlight {
