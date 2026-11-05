@@ -3098,6 +3098,105 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+/* Focus */
+
+	.focus {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		width: calc(100% + 2em);
+		margin: 0 0 3em -2em;
+		padding: 0;
+		list-style: none;
+		gap: 15px;
+	}
+
+		.focus li {
+			display: inline-block;
+			display: flex;
+			margin-top: 3em;
+			gap: 10px;
+		}
+
+			.focus li:nth-child(1), .focus li:nth-child(2), .focus li:nth-child(3) {
+				margin-top: 0;
+				margin-left: 2%;
+			}
+
+			.focus li > :last-child {
+				margin-bottom: 0;
+			}
+
+		.focus image {
+			width: 100%;
+  			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+			.focus .image img {
+				max-width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			.focus li {
+				width: calc(30% - 2em);
+			}
+
+				.focus li:nth-child(3) {
+					margin-top: 3em;
+				}
+
+			.focus .image {
+					flex: 0 1 auto;
+					margin-left: 0;
+					margin-bottom: 2em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.focus {
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+
+				.focus li {
+					width: 100%;
+					margin-left: 0;
+					margin-top: 2em;
+				}
+
+					.focus li:nth-child(2), .focus li:nth-child(3) {
+						margin-top: 2em;
+					}
+
+				.focus .image {
+					width: 300px;
+  					height: 300px;
+					padding: 0.35em;
+				}
+
+					.focus .image img {
+						width: 12em;
+					}
+
+		}
+
 /* Header */
 
 	#header {
