@@ -3054,6 +3054,34 @@ input, select, textarea {
 				border-radius: 100%;
 				width: 16em;
 			}
+		
+		.spotlight .boximage {
+			display: inline-block;
+			margin-left: 0.5em;
+			margin-right: 1em;
+			padding: 0.35em;
+			border: solid 1px;
+		}
+			.spotlight .boximage img {
+				display: block;
+				width: 16em;
+			}
+		
+		.spotlight .altboximage {
+			display: inline-block;
+			object-fit: contain;
+			margin-left: 0.5em;
+			margin-right: 1em;
+			padding: 0.35em;
+			height: 300px;
+		}
+			.spotlight .altboximage img {
+				display: block;
+				object-fit: contain;
+				width: 16em;
+				max-height: 100%;
+				max-width: 100%;
+			}
 
 		@media screen and (max-width: 980px) {
 

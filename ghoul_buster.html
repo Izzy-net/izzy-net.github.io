@@ -30,7 +30,7 @@
 							<section id="content" class="main">
 								<h2>The Idea</h2>
 								<p>The game started off with the idea: a comedic game where you spot monsters vs costumes in a police training style paper target simulation. It was originally going to be a 
-									more ‘official’ program. Where the ghoul busters were a legitimate organisation like police. This evolved into 
+									more ‘official’ program, where the ghoul busters were a legitimate organisation like police. This evolved into 
 									something different by developing a concrete goal for the player’s experience and then testing every game-play/setting/writing 
 									decision against that desired experience.</p>
 								<video controls width="1280" height="720" title="Ghoul Buster Trailer"><source src="images/Ghoul Buster Trailer Itch.mp4" type="video/mp4"/></video>
@@ -54,23 +54,43 @@
 									<span class="altimage"><img src="images/Vampire.png" alt="" /></span>
 								</ul>
 								<h2>Solving Design Problems</h2>
-								<p>Basic gameplay design was: board flips up → use visual cues to identify ghoul or civilian → shoot or don’t → success/failure
+								<p>The basic gameplay design was: board flips up → use visual cues to identify ghoul or civilian → shoot or don’t → success/failure
 									This worked but the problem was it lacked enough variety to keep the player engaged throughout the 'training'. In many first person 
 									shooters, the main mechanic can be summarised as 'kill the thing', or in Ghoul Buster's case 'identify the thing'. FPS games keep the
 									player engaged by offering variety in the *how*. Taking that principle I added new ghoul types that required different player actions
-									to identify them like the Vampire who the player must throw garlic at to elicit a reaction.
+									to identify them like the Vampire who the player must throw garlic at to elicit a reaction. If their eyes light up and they hiss, it's a ghoul.
 								</p>
 								<p>Another aspect of gameplay that presented a problem was how to integrate Mr Buster's lectures. In the game the player is completing a 
 									training course, one that Mr Buster is taking very seriously, so there needed to be lectures where he teaches the player about ghoul 
 									identification. The problem was having lectures for everything both interrupted gameplay and left the player feeling like their hand
 									was being held the whole time. So I added popup hints for some ghoul introductions like the mummy, to keep more momentum wilst still 
-									preserving a major aspect of the game's story.
+									preserving a major aspect of the game's story. Mr Buster introduces the new ghoul type but tells the player they have to apply the Ghoul Busting 
+									principles he has taught them thus far to work it out for themselves.
 								</p>
+								<ul style="float: inline-end; padding-top: 2%;"  class="spotlight">
+									<span class="boximage"><img src="images/Mummy.png"></span>
+								</ul>
 								<h2>Solving System Problems</h2>
 								<p>This project required a number of interconnected systems with a game loop that had to handle a wide range of optional runtime behaviours 
 									whilst maintaining generic, single responsibility code. I was able to leverage my data parsing background and build a custom level editor 
 									resource that could be read my a level_manager class to run levels from board and flow data. 
 								</p>
+								<ul style="float: inline-start; padding-top: 2%;"  class="spotlight">
+									<span class="altboximage"><img src="images/Mr Buster Wants You Poster.png"></span>
+								</ul>
+								<h2>Character Design</h2>
+								<p>Mr Buster is intense, militant and crafty (in the artistic way). I wanted him to be extremely muscular like a caricature of a military commander, his shirt straining across his chest. 
+									His outfit was designed to look military-esque but clearly not be a real uniform and instead be off-the-rack cargo style clothing. "Ghoul Buster" is 
+									taped to a patrol cap and finally, above his pocket are halloween themed stickers, where military medals would usually go. And his poster advertising 
+									his training program is of course a play on the famous 'We Want You' military recruitment poster.
+								</p>
+								<ul class="focus">
+									<li>
+										<span class="image"><img src="images/Mr Buster 1.png"></span>
+										<span class="image"><img src="images/Mr Buster Arms Crossed.png"></span>
+										<span class="image"><img src="images/Shorts2.png"></span>
+									</li>
+								</ul>
 								<h2>Experience</h2>
 								<p>Completing a polished game from ideation to release has cemented learned skills and taught me knew ones. There were things, like 3D modelling, 
 									that I had to learn for the first time for this project. Having a really strong creative vision and then learning the skills required to make 
