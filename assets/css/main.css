@@ -3044,14 +3044,14 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 0.5em;
 			margin-right: 1em;
-			padding: 0.65em;
-			border-radius: 100%;
+			padding: 0.45em;
+			border-radius: 10em;
 			border: solid 1px;
 		}
 
 			.spotlight .altimage img {
 				display: block;
-				border-radius: 100%;
+				border-radius: 10em;
 				width: 16em;
 			}
 		
@@ -3089,6 +3089,7 @@ input, select, textarea {
 			margin-right: 1em;
 			padding: 0.35em;
 			border: solid 1px;
+			border-radius: 1%;
 			max-width: 50%;
 		}
 			.spotlight .largeboximage img {
